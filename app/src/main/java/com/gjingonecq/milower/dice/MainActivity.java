@@ -2,6 +2,7 @@ package com.gjingonecq.milower.dice;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
@@ -18,12 +19,36 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         bindwidget();
-        dice1Controller();
-        dice2Controller();
-        dice3Controller();
-        dice4Controller();
-        dice5Controller();
-        dice6Controller();
+        BackController();
+        ForwardController();
+        DiceController();
+    }
+
+    private void ForwardController() {
+        ForwardButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+    }
+
+    private void DiceController() {
+        DiceButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+    }
+
+    private void BackController() {
+        BackButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
 
     private void bindwidget() {
@@ -33,29 +58,7 @@ public class MainActivity extends AppCompatActivity {
         BackButton = (Button) findViewById(R.id.button3);
     }
 
-    private void dice1Controller() {
 
-    }
-
-    private void dice2Controller() {
-
-    }
-
-    private void dice3Controller() {
-
-    }
-
-    private void dice4Controller() {
-
-    }
-
-    private void dice5Controller() {
-
-    }
-
-    private void dice6Controller() {
-
-    }
 
 
 }
