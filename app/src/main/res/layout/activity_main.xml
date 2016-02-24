@@ -7,7 +7,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.gjingonecq.milower.dice.MainActivity">
+    tools:context="com.gjingonecq.milower.dice.MainActivity"
+    android:background="@drawable/iphone_wallpaper_hd_high_quality_r28q">
 
     <LinearLayout
         android:orientation="vertical"
@@ -27,12 +28,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/imageView"
-            android:minHeight="207dp"
-            android:minWidth="207dp"
             android:layout_gravity="center_horizontal"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_margin="20dp" />
+            android:layout_margin="20dp"
+            android:background="@drawable/die_face_1"
+            android:nestedScrollingEnabled="true" />
 
     </LinearLayout>
 
