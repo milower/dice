@@ -113,6 +113,7 @@ public class MainActivity extends AppCompatActivity {
         DiceButton = (Button) findViewById(R.id.button);
         ForwardButton = (Button) findViewById(R.id.button2);
         BackButton = (Button) findViewById(R.id.button3);
+
     }
 
 
