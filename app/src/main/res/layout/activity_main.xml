@@ -9,8 +9,57 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.gjingonecq.milower.dice.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sirapop Pensiriwong"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:minHeight="207dp"
+            android:minWidth="207dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Dice!!"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Forward"
+        android:id="@+id/button2"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/button"
+        android:layout_toEndOf="@+id/button" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/button3"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/button"
+        android:layout_toStartOf="@+id/button" />
+
 </RelativeLayout>
